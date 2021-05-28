@@ -242,73 +242,13 @@ a:hover {
 }
 
 .portfolio {
-	min-height: 750px;
+	min-height: 600px;
 	overflow: hidden;
-	display: grid;
 
-}
-
-.gallery {
-	margin-top: 30px;
-	min-height: 252px;
-	background-position: 0px 0px;
-	background-size: cover;
-	opacity: 1;
-}
-
-.img-1 {
-
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount1.jpg);
-}
-
-.img-2 {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount2.jpg);
-}
-
-.img-3 {
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount3.jpg);
-}
-
-.img-4 {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount4.jpg);
-}
-
-.img-5 {
-	max-width: 100%;
-	height: auto;
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount6.jpg);
-}
-
-.img-6 {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-image: /*linear-gradient(100deg, rgba(12,32,51,0.55),rgba(12,32,51,0.74)),*/ url(mount5.jpg);
 }
 
 .portfolio-right {
-	/*min-height: 700px;*/
-}
-
-
-.text-left-block {
-	width: 100%;
-	left: 0;
-	height: 100%;
-	z-index: 999;
-	overflow: hidden;
+	min-height: 600px;
 }
 
 .text-left-block .left-center-text {
@@ -328,18 +268,6 @@ a:hover {
 	color: white;
 }
 
-.team-section {
-	font-size: 2.2rem;
-	font-weight: 500;
-	margin-top: 70px;
-	line-height: 1.4;
-	color: white;
-}
-
-.team-paragraph {
-	font-size: 1.1rem;
-	
-}
 
 .block-team {
 	display: grid;
@@ -358,23 +286,7 @@ a:hover {
 	color: #fff;
 }
 
-.block-team small {
-	text-transform: uppercase;
-	font-size: .7rem;
-	color: red;
-	font-style: italic;
-	font-weight: bold;
-	margin-bottom: 10px;
-
-}
-
-.block-team .paragraph {
-	text-align: center;
-	padding: 0rem 3rem 0rem 0rem;
-
-}
-
-.block-team .social-media .fab {
+.social-links .fab {
 	margin: 4px;
 	font-size: 18px;
 	border: 1px solid #fff;
@@ -384,6 +296,12 @@ a:hover {
 	text-align: center;
 	padding-top: 5px;
 	color: red;
+}
+
+.social-links .fab:hover {
+	background-color: white;
+	color: blue;
+	transition: .3s;
 }
 
 
@@ -414,6 +332,13 @@ a:hover {
 strong {
 	font-weight: 700;
 
+}
+
+.img-1 {
+	width: 100%;
+	/*height: 350px;*/
+	object-position: cover;
+	object-position: bottom;
 }
 
 .phone-mail-link {
@@ -511,3 +436,54 @@ strong {
 	padding: 2px 2px;
 }
 
+.word {
+	padding: 0rem 2rem 0rem -0rem;
+}
+
+small {
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: red;
+	line-height: 1;
+	font-size: .8rem;
+	font-weight: 700;
+}
+
+.gal img {
+	width: 80%;
+}
+
+.name {
+	margin-top: 10px;
+	font-size: 20px;
+	color: #fff;
+
+}
+
+.team {
+	margin-top: 50px;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: white;
+	text-align: justify;
+
+}
+
+@media only screen and (max-width: 998px) {
+	 .img-fluid {
+		width: 100%;
+		min-height: 25rem;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: .5rem;
+		margin-top: .5rem;
+
+	}
+	.col-lg-6 .col-md-6 .col-sm-6 {
+		width: 100%;
+		display: block;
+	}
+}
